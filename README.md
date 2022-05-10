@@ -164,16 +164,16 @@ def multimap(pairs) -> dict:
     return result
     
 Mapping_locations = Map(
-    {('T.nagar', 'Guindy'): 10,('T.nagar', 'Kodambakkam'): 14,('Guindy', 'Velachery'): 2,('Guindy', 'Porur'): 8,('Velachery', 'Chromepet'): 5,('Chromepet',          'Tambaram'): 3,('Tambaram', 'Perungalathur'): 8,('Perungalathur', 'Padappai'): 9,('Padappai', 'Vallam'): 14,('Vallam', 'Mother'): 3,
-    ('Mother', 'Walajabad'): 11,('Walajabad', 'Kachipuram'): 5,('Perungalathur', 'Guduvanchery'): 7,('Guduvanchery', 'Singaperumal Kovil'): 5,('Singaperummal Kovil', 'Chengalpattu'): 8,('Chengalpattu', 'Palayaseevaram'): 6,('Palayaseevaram', 'Kattavakkam'): 8,('Kattavakkam', 'Enathur'): 5,('Enathur', 'Kanchipuram'): 11,
-    ('Porur', 'Poonamallee'): 8,('Poonamalle', 'Sriperumabadur'): 14,('Sriperumbadur', 'Sunguvarchathiram'): 9,('Sriperumabadur', 'Mudichur'): 8, ('Sunguvarchathiram', 'Neervalur'): 4,('Neervalur', 'Kilambi'): 5,('Kilambi', 'Damal'): 4,('Neervalur', 'Enathur'): 7,('Enathur', 'Kanchipuram'): 9,('Kanchipuram', 'Kilambi'): 4,('Kilambi', 'Damal'): 4,('Kodambakkam', 'Porur'): 9})
+    {('Porur', 'Vandalur'): 10,('Vandalur', 'Perumgalathur'): 14,('Vandalur', 'Mudichur'): 2,('Perumgalathur', 'Mudichur'): 8,('Mudichur', 'Tambaram'): 5,('Vandalur','Sri Lakshmi Temple'): 3,('Tambaram', 'Chrompet'): 8,('Perungalathur', 'Padappai'): 9,('Padappai', 'Vallam'): 14,('Chrompet','Pallavaram'): 3, 
+      ('Pallavam', 'Airport'): 11,('Airport', 'Beach'): 5,('Airport', 'Guindy'): 7,('Guindy', 'T-Nagar'): 5,('T-Nagar', 'Koyambedu'): 8,('T-Nagar', 'Marina Beach'): 6,('T-Nagar', 'Edward Beach'): 8,('Edward Beach', 'Thiruvallur Beach'): 5,('Chrompet', 'Medakkam'): 11, 
+      ('Medakkam', 'Sholing'): 8,('Sholing', 'Thoramakkam'): 14,('Thoramakkam', 'Thiruvallur Beach'): 9,('Thiruvallur Beach', 'Perumbakkam'): 8})
 
 
-r0 = RouteProblem('T.nagar', 'Velachery', map=Mapping_locations)
-r1 = RouteProblem('Chromepet', 'Padappai', map=Mapping_locations)
-r2 = RouteProblem('Velachery', 'Poonamallee', map=Mapping_locations)
-r3 = RouteProblem('Sriperumabadur', 'Mudichur', map=Mapping_locations)
-r4 = RouteProblem('Enathur', 'Damal', map=Mapping_locations)
+r0 = RouteProblem('Vandalur', 'Mudichur', map=Mapping_locations)
+r1 = RouteProblem('Pallavam', 'Guindy', map=Mapping_locations)
+r2 = RouteProblem('T-Nagar', 'Edward Beach', map=Mapping_locations)
+r3 = RouteProblem('Medakkam', 'Thoramakkam', map=Mapping_locations)
+r4 = RouteProblem('Sholing', 'Thiruvallur Beach', map=Mapping_locations)
 print(r0)
 print(r1)
 print(r2)
